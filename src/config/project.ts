@@ -7,15 +7,15 @@ export const BACKEND_CONNECTED = Boolean(API_URL);
 /** Edit these when your model is trained. Use null for metrics that are not available. */
 export const MODEL_INFO = {
   type: "Deep Learning Image Classifier",
-  candidates: "EfficientNet / MobileNetV2",
-  trainingDataset: "PlantVillage",
-  task: "Multi-class crop disease classification",
+  candidates: "EfficientNetB0",
+  trainingDataset: "Tomato Leaf Illness Detection",
+  task: "Tomato leaf condition classification",
   explainability: "Optional XAI module to be integrated later",
   metrics: {
-    accuracy: null as number | null,
-    precision: null as number | null,
-    recall: null as number | null,
-    f1: null as number | null,
+    accuracy: 0.92,
+    precision: 0.9241,
+    recall: 0.9282,
+    f1: 0.9183,
   },
 };
 
